@@ -45,6 +45,6 @@ getData = async (id) => {
   );
 };
 
-getData(2).catch((err) => {
+getData(1).catch((err) => {
   console.log(err);
 });
