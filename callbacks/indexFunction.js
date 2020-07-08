@@ -27,7 +27,7 @@ getSkillsById = function (programmer, callback) {
   });
 
   if (!skill) {
-    callback(`Not founded skill with id ${programmer.id}`);
+    callback(`Not founded skills with id ${programmer.id}`);
   } else {
     callback(null, skill);
   }

@@ -26,7 +26,7 @@ getSkillsById = (programmer) => {
     let skill = skills.find((skill) => skill.id === programmer.id);
 
     if (!skill) {
-      reject(`Not founded skill with id ${id}`);
+      reject(`Not founded skills with name ${programmer.name}`);
     } else {
       resolve({
         id: programmer.id,

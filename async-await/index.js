@@ -23,7 +23,7 @@ getSkillsById = (programmer) => {
   let skill = skills.find((skill) => skill.id === programmer.id);
 
   if (!skill) {
-    throw new Error(`Not founded skill with id ${id}`);
+    throw new Error(`Not founded skills with name ${programmer.name}`);
   } else {
     return {
       id: programmer.id,
@@ -45,4 +45,6 @@ getData = async (id) => {
   );
 };
 
-getData(1);
+getData(2).catch((err) => {
+  console.log(err);
+});
